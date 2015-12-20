@@ -29,6 +29,27 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
+		<style>
+			#people{
+				display: flex;
+				width: 100%;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			#people>.person{
+				flex-grow: 1;
+			}
+
+			#people>.person img{
+				width: 150px;
+				height: 150px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -48,46 +69,52 @@
 				<section id="fragments">
 					<section>
 						<h2>Who are we?</h2>
-						<ul>
-							<li class="fragment">Tim Stallard</li>
-							<img class="fragment" src="https://pbs.twimg.com/profile_images/628620614144692225/uAa7rDN2.png" width="100" height="100">
-							<li class="fragment">Matt Randall</li>
-							<img class="fragment" src="https://pbs.twimg.com/profile_images/415169983987990528/bMJvQWKn.png" width="100" height="100">
-							<li class="fragment">Freddie Brown</li>							
-							<li class="fragment">Sailesh Patel</li>
-							<img class="fragment" src="https://pbs.twimg.com/profile_images/670989035368783873/KjhMGYq9.jpg" width="100" height="100">
-
-
-						</ul>
+						<div id="people">
+							<div class="person"><img src="https://pbs.twimg.com/profile_images/628620614144692225/uAa7rDN2.png">Tim Stallard</div>
+							<div class="person"><img src="https://pbs.twimg.com/profile_images/415169983987990528/bMJvQWKn.png">Matt Randall</div>
+							<div class="person"><img src="http://www.grammarly.com/blog/wp-content/uploads/2015/01/Silhouette-question-mark.jpeg">Freddie Brown</div>
+							<div class="person"><img src="https://pbs.twimg.com/profile_images/670989035368783873/KjhMGYq9.jpg">Sailesh Patel</div>
+						</div>
 					</section>
 				</section>
 
 					<section id="fragments">
 						<section>
-							<h2>What did we use?</h2>
-								<ul>
-									<li class="fragment">Web</li>
-									<ul>
-										<li class="fragment">HTML</li>
-										<li class="fragment">CSS</li>
-										<li class="fragment">JavaScript</li>
-									</ul>
-									<li class="fragment">Hardware</li>
-									<ul>
-										<li class="fragment"></li>
-										<li></li>
-									</ul>
-								</ul>
+							<h1>What did we use?</h1>
+						</section>
+						<section>
+							<h2>Front end</h2>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>Handlebars used for templating</li>
+							</ul>
+						</section>
+						<section>
+							<h2>Server</h2>
+							<ul>
+								<li>REST API</li>
+								<li>Socket.io for live data</li>
+								<li>MQTT for talking to tree</li>
+							</ul>
+						</section>
+						<section>
+							<h2>Hardware</h2>
+							<ul>
+								<li>ESP8266</li>
+								<li>Arduino libraries</li>
+								<li>MQTT - PubSubClient</li>
+								<li>LEDs - WS2812Bs</li>
+							</ul>
 						</section>
 					</section>
 
 					<section>
-						<h2>Go to....</h2>
-						<h3>WeirdPlaceholderWebsite.co.uk</h3>
+						<h2>Demo (hopefully...)</h2>
+						<h1>SherryTheTree.com</h1>
+						<h4>Thanks Domain.com!</h4>
 					</section>
-
-					<
-
 			</div>
 
 		</div>
